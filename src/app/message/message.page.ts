@@ -12,7 +12,7 @@ export class MessagePage implements OnInit {
 
   ngOnInit() {
   }
-    sendMessage(){
+    send(){
     let message = {
     content: this.contMessage
     }

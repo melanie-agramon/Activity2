@@ -8,7 +8,7 @@
     <ion-item>
       <ion-textarea [(ngModel)]="contMessage" placeholder="Enter more information here..."></ion-textarea>
     </ion-item><br>
-    <ion-button expand="full" file="solid" color="primary" (click)="sendMessage()">Send</ion-button>
+    <ion-button expand="full" file="solid" color="primary" (click)="send()">Send</ion-button>
 </ion-card-content>
 <ion-list>
   <ion-item-sliding id="item100"  *ngFor="let cont of messages">
