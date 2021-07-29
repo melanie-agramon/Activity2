@@ -6,22 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message.page.scss'],
 })
 export class MessagePage implements OnInit {
-  contMessage = "";
+  contents = "";
   messages = [];
+
   constructor() { }
 
   ngOnInit() {
   }
-    send(){
-    let message = {
-    content: this.contMessage
+
+  sendMessage() {
+    let messages = {
+      contents:this.contents  
     }
-    this.messages.push(message);
-    this.clearField();
+    this.messages.push(messages);
+    this.clearfield();
     console.log(this.messages);
-    }
-    clearField(){
-      this.contMessage = "";
-    }
+  }
+  clearfield(){
+    this.contents ="";
+  }
 
 }
